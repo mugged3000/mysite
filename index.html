@@ -5,18 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfilo</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="/image/dev.png" type="image/x-icon">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
     <header>
-        <nav class="nav-bar">
+          <!-- <nav class="nav-bar">
             <h1>Kodak Mugged</h1>
-            <ul>
+            <ul class="ul-nav">
                 <li><a href="About me">About me</a></li>
                 <li><a href="Contact">Contanct</a></li>
                 <li><a href="Service">Service</a></li>
             </ul>
-        </nav>
+        </nav>   -->
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                JoGeek
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+              <a href="//github.io/jo_geek" target="_blank">Github</a>
+              <a href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
+              <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
+              <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
+              <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
+            </div>
+          </div>
         <div class="write-up">
+            <div class="home">
             <h2>Hi, I am</h2> 
             <h2>Onyindamole Bakare</h2> 
             <h5>frontend developer</h5>
@@ -25,20 +51,26 @@
                 <button class="second">Learn more</button>
             </div>
         </div>
-        <img src="./image/kodak.png" alt="kodak pics" height="500" width="500">
+            <img  src="./image/kodak.png" alt="kodak pics" >
+            
+        </div>
+       
     </header>
-    <main>
-        <!-- About section -->
+          
+      <main>
+         
         <section id="about">
-            <div class="bag">
+            <div class="bag-section">
            <h3 class="sec-box"> About</h3> 
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-              <p>Pariatur accusamus sit consectetur ullam alias atque recusandae nesciunt suscipit quibusdam expedita </p>
-               <p>  perferendis asperiores, sint ea possimus nam sunt accusantium vel optio? </p>
-            <p> Labore, quisquam dolor esse reprehenderit officiis, nesciunt ipsum, </p> 
-             <p>autem voluptatem repudiandae facilis ab molestiae illum aspernatur dolorem </p> <p> voluptatibus laborum deserunt voluptate explicabo. Laudantium non aliquid ratione esse earum corrupti unde? </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Pariatur accusamus sit consectetur ullam alias atque recusandae nesciunt suscipit quibusdam expedita 
+                 perferendis asperiores, sint ea possimus nam sunt accusantium vel optio? 
+             Labore, quisquam dolor esse reprehenderit officiis, nesciunt ipsum, 
+             autem voluptatem repudiandae facilis ab molestiae illum aspernatur doloremvoluptatibus laborum deserunt voluptate explicabo. Laudantium non aliquid ratione esse earum corrupti unde? 
+             </p>
             </div>
-          <div class="box-container">
+            
+           <div class="box-container">
             <div class="box">
              <div class="bigcircle">
              <div class="smallcircle"></div>
@@ -67,35 +99,35 @@
              <h4>Phone</h4>
              <p>your name goes here</p>
             </div>
-          </div>
+          </div> 
 
         </section>
 <!-- Ends!!! -->
 
         <!-- What I do section -->
-      <section id="whatido">
-
+       <section id="whatido">
+            
           <h2 class="what">What i do</h2>
             <div class="general">  
-            <div class="sax" >
-            <img style="margin-left: 60px; margin-top: -20px;" class="one" src="./image/software.png" alt="">
-            <span> software development</span>
+            <div class="general-box" >
+            <img class="photos"   src="./image/software.png" alt="">
+            <p> software development</p>
            
            </div>
-            <div class="max" >
-                <img style="margin-left: 60px; margin-top: -20px;" class="two" src="./image/dev.png" alt="">
+            <div class="general-box" >
+                <img class="photos"   src="./image/dev.png" alt="">
          <p> web development</p>
             </div>
-             <div class="rat-man">
-                <img style="margin-left: 60px; margin-top: -20px;" class="three" src="./image/web.png" alt="">
+             <div class="general-box">
+                <img class="photos"  src="./image/web.png" alt="">
                  <p>web design</p>
              </div>
             </div>
-      </section>
+      </section> 
     <!-- Ends!!! -->
 
     <!-- my skiils section -->
-    <section id="skills">
+      <section>
         <div class="raw">My skills</div>
         <div class="main-box">
         <div>
@@ -115,31 +147,37 @@
             <p class="para">PHP</p>
         </div>
         </div>
-    </section>
+    </section>  
     <!-- end of skills -->
 
       <!--  touch section -->
-      <div class="zane-tax">Get in touch </div>
-     <form>
-        <div >
-            <input    type="text" name="" placeholder="Name"> 
-            <input type="text" name="" placeholder="Last Name"> 
-            <br>
-            <br>
-             <input type="text" name="" placeholder="Email">
-             <input type="text" name="" placeholder="Phone Number">
-             <br>
-             <br>
-              <textarea name="" id="" >Message</textarea>
+      <form>
+        <div class="zane-tax">Get in touch </div> 
+      
+        <div class="form" >
+<div class ="form-input">
+    <input    type="text" name="" placeholder="Name"> 
+    <input type="text" name="" placeholder="Last Name"> 
+    
+</div>
+<div class ="form-input">
+    <input type="text" name="" placeholder="Email">
+    <input type="text" name="" placeholder="Phone Number">
+
+</div>
+             
+
+             <textarea name="" id="" >Message</textarea>
               <button class="main-button">Sumbit here</button>
         </div>
       
-     </form>
-      </main>
-      <footer>
+     </form> 
+      </main>  
+       <footer>
         <div class="kodak">
            &copy;KodakMugged 2020 
         </div>
       </footer>
+      
 </body>
 </html>
